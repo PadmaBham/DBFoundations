@@ -6,6 +6,8 @@
 --			in Views   
 -- Change Log: When,Who,What
 -- 2023-11-22,PBhamidipati,Created File
+-- 2023-11-26,PBhamidipati,Edited File to address errors from ver. 01: added 'GO' in line #180 after the 'print' stmt in original
+--		script to address 'Create View stmt must be the first stmt in the batch' error 
 --**************************************************************************--
 Begin Try
 	Use Master;
@@ -176,6 +178,7 @@ print
 -- NOTES: 1) Do not use a *, list out each column!
 --        2) Create one view per table!
 --		  3) Use SchemaBinding to protect the views from being orphaned!
+GO
 
 CREATE VIEW vCategories
 	WITH SCHEMABINDING
